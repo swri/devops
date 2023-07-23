@@ -3,10 +3,7 @@ pipeline {
         node {
             label 'docker-agent-golang'
             }
-      }
-    triggers {
-        pollSCM '* * * * *'
-    }
+	}
     stages {
         stage('install mod') {
             steps {
